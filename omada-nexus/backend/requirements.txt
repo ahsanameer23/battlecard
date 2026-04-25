@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+asyncpg
+pydantic
+python-dotenv
+
+pymupdf
+pytesseract
+pdf2image
+python-multipart
+pytest
+pytest-asyncio
+httpx
+pandas
+openpyxl

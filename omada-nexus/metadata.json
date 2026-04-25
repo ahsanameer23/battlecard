@@ -1,0 +1,6 @@
+{
+  "name": "Omada Nexus Playground",
+  "description": "Network hardware simulation and weight tuning dashboard for optimized device selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
