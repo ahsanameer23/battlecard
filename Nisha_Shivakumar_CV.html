@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Shivakumar - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a1a',     // Deep black/charcoal for sidebar
+                        accent: '#d4af37',      // Elegant gold for accents
+                        secondary: '#f8f9fa',   // Very light gray for main background
+                        textmain: '#2d3748',    // Dark gray for main text
+                        textmuted: '#718096'    // Muted gray for dates/subtitles
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e2e8f0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color: #2d3748;
+        }
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            body { background-color: white; }
+            .page-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                width: 100% !important;
+                padding: 0 !important;
+            }
+            .no-print { display: none !important; }
+            .page-break { page-break-before: always; }
+        }
+        .page-container {
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+        }
+        /* Sidebar layout */
+        .sidebar {
+            width: 35%;
+            background-color: #1a1a1a;
+            color: #f3f4f6;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+        /* Sidebar geometric accent */
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #d4af37 0%, #f9e596 50%, #d4af37 100%);
+        }
+        /* Main content area */
+        .main-content {
+            width: 65%;
+            background-color: #ffffff;
+            padding: 3rem 3rem;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        .sidebar-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+            text-transform: uppercase;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 2px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d4af37;
+            border: 2px solid #fff;
+        }
+        .skill-tag {
+            background-color: rgba(255,255,255,0.1);
+            color: #e5e7eb;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Action bar -->
+    <div class="no-print w-full bg-primary text-white p-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+        <div class="font-serif italic text-lg text-accent">Artistic & Minimalist Resume</div>
+        <button onclick="window.print()" class="bg-accent hover:bg-yellow-600 text-primary px-6 py-2 rounded-md font-bold transition-colors flex items-center gap-2">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <!-- CV Container (Page 1) -->
+    <div class="page-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <!-- Profile / Name area -->
+            <div class="text-center mb-8">
+                <!-- Initials Logo -->
+                <div class="w-24 h-24 mx-auto rounded-full border-2 border-accent flex items-center justify-center mb-6 bg-gradient-to-br from-gray-800 to-black">
+                    <span class="font-serif text-3xl font-bold text-accent">NS</span>
+                </div>
+
+                <h1 class="text-3xl font-bold text-white tracking-wider mb-2 uppercase" style="line-height: 1.1;">Nisha<br>Shivakumar</h1>
+                <p class="text-accent font-medium tracking-widest text-sm uppercase mt-4">Filmmaker & Editor</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="mt-10">
+                <h2 class="sidebar-title mt-0">Contact</h2>
+                <div class="space-y-4 text-sm font-light">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-accent w-4 text-center"></i>
+                        <span>Dubai, UAE</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone mt-1 text-accent w-4 text-center"></i>
+                        <span>+971 56 947 5922</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope mt-1 text-accent w-4 text-center"></i>
+                        <a href="mailto:nisha.shivakumar08@gmail.com" class="hover:text-accent transition-colors break-all">nisha.shivakumar08@gmail.com</a>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-linkedin mt-1 text-accent w-4 text-center"></i>
+                        <a href="https://linkedin.com/in/nisha-shivakumar-a77220193" target="_blank" class="hover:text-accent transition-colors break-all">linkedin.com/in/nisha-shivakumar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software / Technical -->
+            <div>
+                <h2 class="sidebar-title">Software</h2>
+
+                <div class="mb-4">
+                    <h3 class="text-xs text-gray-400 uppercase tracking-widest mb-2 font-semibold">Video & Production</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Premiere Pro</span>
+                        <span class="skill-tag">DaVinci Resolve</span>
+                        <span class="skill-tag">Final Cut Pro</span>
+                        <span class="skill-tag">After Effects</span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xs text-gray-400 uppercase tracking-widest mb-2 font-semibold">Design & Graphics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Crello</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h2 class="sidebar-title">Education</h2>
+                <div class="space-y-5 text-sm">
+                    <div>
+                        <div class="font-bold text-white leading-tight">Diploma of Higher Education: Fashion & Animation</div>
+                        <div class="text-gray-400 text-xs mt-1">Indian Institute of Fashion and Animation, Mangalore</div>
+                        <div class="text-accent text-xs mt-1 font-medium">July 2019</div>
+                    </div>
+                    <div>
+                        <div class="font-bold text-white leading-tight">Diploma of Higher Education: Animation</div>
+                        <div class="text-gray-400 text-xs mt-1">Silicon College of Advance Studies, Mangalore</div>
+                        <div class="text-accent text-xs mt-1 font-medium">March 2019</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <h2 class="sidebar-title">Languages</h2>
+                <div class="space-y-3 text-sm">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-200">English</span>
+                            <span class="text-accent text-xs">C1</span>
+                        </div>
+                        <div class="w-full bg-gray-700 h-1 rounded-full"><div class="bg-accent h-1 rounded-full" style="width: 85%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-200">Telugu</span>
+                            <span class="text-accent text-xs">Native</span>
+                        </div>
+                        <div class="w-full bg-gray-700 h-1 rounded-full"><div class="bg-accent h-1 rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div class="pt-2 text-xs text-gray-400 leading-relaxed">
+                        <span class="text-white">Conversational:</span> Malayalam, Hindi, Tamil
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- Profile Statement -->
+            <section class="mb-10 pt-4">
+                <h2 class="section-title">Profile</h2>
+                <p class="text-sm leading-relaxed text-gray-600 text-justify font-light">
+                    Versatile and highly creative <strong class="font-semibold text-textmain">Video Editor and Visual Content Specialist</strong> with over 5 years of proven experience in the dynamic UAE media landscape. Demonstrated expertise in <strong class="text-accent font-medium">cinematic wedding filmmaking, luxury event coverage, and formulating end-to-end brand content strategies</strong>. Recognized for delivering high-impact, emotionally resonant visual storytelling customized for Middle Eastern and European audiences. Technically proficient in advanced color grading, multi-camera editing, and executing comprehensive social media growth strategies.
+                </p>
+            </section>
+
+            <!-- Experience -->
+            <section>
+                <h2 class="section-title mb-6">Experience</h2>
+
+                <div class="timeline-item">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                        <h3 class="text-lg font-bold text-gray-900">Video Editor & Wedding Filmmaker</h3>
+                        <span class="text-sm font-bold text-accent tracking-wider uppercase mt-1 md:mt-0">2023 – Present</span>
+                    </div>
+                    <div class="text-sm font-medium text-gray-500 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-building text-gray-400"></i> Wedding Studio & Production House – Dubai, UAE
+                    </div>
+
+                    <ul class="list-none space-y-3 text-sm text-gray-600 leading-relaxed font-light">
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Cinematic Production:</strong> Direct, shoot, and expertly edit high-end wedding films catering to prominent Middle Eastern and Arabic clientele, seamlessly blending modern European stylistic storytelling with important cultural traditions.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Post-Production Mastery:</strong> Execute professional-grade color correction/grading, craft emotional narrative pacing, and perform seamless transitions for documentary films, dynamic event highlights, and intricate décor showcases.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Technical Operations:</strong> Spearhead post-production workflows for highly complex multi-camera recording setups. Synchronize and integrate specialized drone and crane footage.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Premium Event Coverage:</strong> Conceptualized and edited high-impact promotional video content for major international brand activations, including the high-profile launch of the Victoria's Secret flagship store.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                        <h3 class="text-lg font-bold text-gray-900">Content Manager & Senior Video Editor</h3>
+                        <span class="text-sm font-bold text-accent tracking-wider uppercase mt-1 md:mt-0">2019 – 2022</span>
+                    </div>
+                    <div class="text-sm font-medium text-gray-500 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-building text-gray-400"></i> Razzl Dazzl Hair (Femperial Group LTD) – Dubai, UAE
+                    </div>
+
+                    <ul class="list-none space-y-3 text-sm text-gray-600 leading-relaxed font-light">
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Content Strategy:</strong> Spearheaded end-to-end content production lifecycles and comprehensive social media management (Instagram, TikTok). Drove consistent month-over-month audience growth and increased organic brand visibility.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Multimedia Asset Creation:</strong> Directed, filmed, and produced high-fidelity campaign photoshoots, detailed product demonstrations, and engaging digital advertising assets utilizing the complete Adobe Creative Suite.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Brand Identity Management:</strong> Established, codified, and enforced strict brand guidelines, maintaining consistent brand voice across all multi-channel digital communications and physical print collateral.
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            <strong class="text-gray-800 font-medium">Team Leadership & Design:</strong> Mentored junior design staff. Concepted and designed visually engaging print and digital marketing collateral (brochures, web banners, social mockups) leveraging Figma and Photoshop.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Expertise Grid -->
+            <section class="mt-8">
+                <h2 class="section-title mb-6">Expertise Areas</h2>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <div class="text-accent mb-2"><i class="fa-solid fa-film text-xl"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Post-Production</h4>
+                        <p class="text-gray-500 text-xs font-light">Cinematic Storytelling, Color Grading, Multi-Camera Syncing, Audio Design.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <div class="text-accent mb-2"><i class="fa-solid fa-bullhorn text-xl"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Content Strategy</h4>
+                        <p class="text-gray-500 text-xs font-light">Campaign Direction, Social Media Management, Trend Analysis, SEO.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <div class="text-accent mb-2"><i class="fa-solid fa-camera-retro text-xl"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Creative Direction</h4>
+                        <p class="text-gray-500 text-xs font-light">Photography, Videography, Visual Concept Generation, Brand Identity.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <div class="text-accent mb-2"><i class="fa-solid fa-pen-nib text-xl"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Asset Design</h4>
+                        <p class="text-gray-500 text-xs font-light">Print Layouts, Digital Collateral, Ad Banners, Social Mockups.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
